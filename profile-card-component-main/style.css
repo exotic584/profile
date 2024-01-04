@@ -9,16 +9,78 @@
 body{
     background-color: hsl(185, 75%, 39%);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body > img {
+    position: absolute;
+    width: 65%;
 }
 
 .top {
-    position: absolute;
-    top: -100%;
-    left: -20%;
+    top: -40%;
+    left: -30%;
 }
 
 .bottom {
-    position: absolute;
-    bottom: -90%;
-    right: -20%;
+    bottom: -50%;
+    right: -30%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card > img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile > img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 1rem ;
+}
+
+.profile {
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+
+
+h3 {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+}
+
+.status {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+}
+
+.head {
+    text-align: center;
+}
+
+.head > p {
+    font-size: 13px;
 }
